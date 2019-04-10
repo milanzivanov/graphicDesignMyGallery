@@ -1,0 +1,18 @@
+{
+  "name": "my_graphic_design_gallery",
+  "version": "1.0.0",
+  "description": "starter_file_scss",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "mz",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "lightbox2": "^2.10.0"
+  }
+}
