@@ -102,8 +102,13 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #ccc;
-  color: #ccc; }
+  background-color: #222;
+  color: #ccc;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957); }
+
+a {
+  cursor: pointer; }
 
 .wrapper {
   max-width: 1280px;
@@ -111,7 +116,9 @@ body {
   margin-left: auto; }
 
 .header {
-  background-color: #222; }
+  background-color: #222;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957); }
 
 .header-box {
   display: flex;
@@ -136,7 +143,8 @@ img.header-box--logo {
 .masonry {
   display: flex;
   flex-flow: row wrap;
-  width: 100%; }
+  width: 100%;
+  margin-top: 8px; }
 
 .masonry-item {
   flex: calc(50% - 8px);
@@ -150,7 +158,9 @@ img.header-box--logo {
     /* Some gutter */ } }
 
 .footer {
-  background-color: #222; }
+  background-color: #222;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957); }
 
 .footer-box {
   display: flex;

@@ -3,9 +3,16 @@
 
 
 body {
-  background-color: #ccc; 
+  background-color: #222; 
   // color: #2eae49;
   color: #ccc;
+
+  background-color: #159957;
+  background-image: linear-gradient(120deg,#155799,#159957);
+}
+
+a {
+  cursor: pointer;
 }
 
 // .masonry-item {
@@ -29,6 +36,9 @@ body {
 
 .header {
     background-color: #222;
+
+    background-color: #159957;
+    background-image: linear-gradient(120deg,#155799,#159957);
 }
 
 .header-box {
@@ -61,6 +71,7 @@ img.header-box--logo {
     flex-flow: row wrap;
     // margin-left: -8px; /* Adjustment for the gutter */
     width: 100%;
+    margin-top: 8px;
 }
 
 .masonry-item {
@@ -77,12 +88,15 @@ img.header-box--logo {
 
 .footer {
   background-color: #222;
+  background-color: #159957;
+  background-image: linear-gradient(120deg,#155799,#159957);
 }
 .footer-box {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px 0;
+
 }
 
 
