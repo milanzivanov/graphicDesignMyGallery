@@ -120,15 +120,25 @@ a {
   margin-left: auto; }
 
 .header {
+  position: relative;
   background-color: #222;
   background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957); }
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 7;
+  z-index: 1; }
 
 .header-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10px; }
+  padding: 50px 10px; }
 
 @media screen and (max-width: 768px) {
   .header-box {
@@ -136,8 +146,10 @@ a {
     flex-direction: column; } }
 
 img.header-box--logo {
+  position: relative;
   height: 100px;
-  width: 100px; }
+  width: 100px;
+  z-index: 5; }
 
 .header-text h2 {
   font-family: sans-serif;
