@@ -119,5 +119,31 @@ particlesJS('particles-js', {
     });
 })();
 
+// scroll to section
+$('a[href^="#"]').bind('click', function(e) {
+    e.preventDefault(); 
+
+    var target = $(this).attr("href");
+
+    $('html, body').stop().animate({
+        scrollTop: $(target).offset().top
+    }, 600, function() {
+            location.hash = target; 
+    });
+
+    return false;
+});
+
+// sticky
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {  
+        $('header, .header-box, .masonry, .header-box--logo').addClass("sticky");
+    }
+    else {
+        $('header, .header-box, .masonry, .header-box--logo').removeClass("sticky");
+    }
+});
+
 
 

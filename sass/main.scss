@@ -12,6 +12,7 @@ body {
   font-family: Roboto, Montserrato, Open-sans;
 }
 
+// not good... we gona fix this
 a {
   cursor: pointer;
   display: block;
@@ -30,9 +31,6 @@ a {
 .header {
     position: relative;
     background-color: #222;
-
-    // background-color: #159957;
-    // background-image: linear-gradient(120deg,#155799,#159957);
 }
 
 #particles-js {
@@ -53,6 +51,13 @@ a {
     padding: 50px 10px;
 }
 
+.header-box.sticky {
+    // set animation
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 25px 10px;
+}
+
 @media screen and (max-width: 768px) {
   .header-box {
     justify-content: center;
@@ -61,31 +66,111 @@ a {
 }
 
 img.header-box--logo {
-  position: relative;
-  height: 100px;
-  width: 100px;
-  z-index: 5;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    z-index: 5;
+    opacity: 0.9;
 
-  opacity: 0.9;
+    // set animation
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+img.header-box--logo.sticky {
+  height: 50px;
+  width: 50px;
 }
 
 .header-text h2 {
-  font-family: sans-serif;
+  font-family: Roboto;
   text-transform: capitalize;
   font-weight: bold;
 }
 
+// 
+// sticky
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  // set animation
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header.sticky {
+  font-size: 14px;
+  background: #111;
+}
+
+// end sticky
+
+
 .masonry { 
     display: flex;
     flex-flow: row wrap;
-    // margin-left: -8px; /* Adjustment for the gutter */
     width: 100%;
-    margin-top: 8px;
+    margin-top: 206px;
+}
+
+@media screen and (max-width: 768px) {
+  .masonry { 
+      margin-top: 261px;
+}
 }
 
 .masonry-item {
-    flex: calc(50% - 8px);
-    margin: 0 8px 8px 0; /* Some gutter */
+    // flex: calc(50% - 8px);
+    // margin: 0 8px 8px 0; /* Some gutter */
+
+    flex: calc(50% - 16px);
+    margin: 0 8px 8px 8px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.1s ease-in-out; 
+}
+
+.masonry-item:hover > .m-glass {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.m-glass {
+  font-size: 10em;
+  display: none;
+  width: 0.4em;
+  box-sizing: content-box;
+  height: 0.4em;
+  border: 0.1em solid #ccc;
+  position: absolute;
+  border-radius: 0.35em;
+}
+
+@media screen and (max-width: 768px) {
+  .masonry-item:hover > .m-glass {
+    display: none;
+  }
+}
+
+.m-glass:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -0.35em;
+    bottom: -0.2em;
+    border-width: 0;
+    background: #ccc;
+    width: 0.35em;
+    height: 0.08em;
+    transform: rotate(45deg);
 }
 
 @media screen and (max-width: 768px) {
@@ -114,14 +199,49 @@ img.header-box--logo {
 }
 
 @media screen and (max-width: 768px) {
-  .footer-box--link {
-    font-size: 1em;
-;
+    .footer-box--link {
+        font-size: 1em;
+    }
 }
+
+// btt
+section.back-to-top {
+  @include float;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a.btn-to-top {
+      display: flex;
+      background: #222;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+
+      // arrow up custum
+      i {
+        border: solid #159957;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        width: 20px;
+        height: 20px;
+      }
+      
+      .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+  }
 }
 
 
 
+  
+  
 
 
 
