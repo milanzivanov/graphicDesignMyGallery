@@ -6,13 +6,13 @@ body {
   background-color: #222; 
   color: #ccc;
 
-  background-color: #159957;
-  background-image: linear-gradient(120deg,#155799,#159957);
+  background-color: #155799;;
+  // background-image: linear-gradient(120deg,#155799,#159957);
 
   font-family: Roboto, Montserrato, Open-sans;
 }
 
-// not good... we gona fix this
+// danger... we gona fix this
 a {
   cursor: pointer;
   display: block;
@@ -31,6 +31,8 @@ a {
 .header {
     position: relative;
     background-color: #222;
+
+    border-bottom: 5px solid #155799;
 }
 
 #particles-js {
@@ -82,10 +84,16 @@ img.header-box--logo.sticky {
   width: 50px;
 }
 
-.header-text h2 {
+.header-text {
   font-family: Roboto;
   text-transform: capitalize;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .header-text {
+        display: none;
+    }
 }
 
 // 
@@ -108,18 +116,10 @@ img.header-box--logo.sticky {
 
 // end sticky
 
-
 .masonry { 
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    margin-top: 206px;
-}
-
-@media screen and (max-width: 768px) {
-  .masonry { 
-      margin-top: 261px;
-}
 }
 
 .masonry-item {
@@ -136,6 +136,10 @@ img.header-box--logo.sticky {
     align-items: center;
 
     transition: 0.1s ease-in-out; 
+}
+
+.masonry-item:nth-child(even) {
+  margin-left: 0;
 }
 
 .masonry-item:hover > .m-glass {
@@ -221,6 +225,8 @@ section.back-to-top {
       justify-content: center;
       align-items: center;
 
+      opacity: 0;
+
       // arrow up custum
       i {
         border: solid #159957;
@@ -238,8 +244,49 @@ section.back-to-top {
   }
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background: #222;
+  width: 50px;
+  height: 50px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: #f5f5f5;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
 
+  i {
+    border: solid #155799;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+}
+.back-to-top:hover {
+  background: #e9ebec;
+}
+.back-to-top.show {
+  opacity: 1;
+}
   
   
 

@@ -16,9 +16,7 @@
     <link rel="stylesheet" href="./css/style.css">
     
 </head>
-<body>
-
-    
+<body id="sectionHeader">
     <header class="header">
         <div id="particles-js"></div>
         <div class="wrapper header-box">
@@ -34,15 +32,19 @@
     </header>
 
     <div class="masonry">
-        <div class="masonry-item" id="sectionHeader">
-            <a href="./img/tdemobilpng-8.png" data-lightbox="image-1" data-title="TDE Mobil">
+        <div class="masonry-item">
+            <a 
+                class="masonry-item--link" 
+                href="./img/tdemobilpng-8.png" 
+                data-lightbox="image-1" 
+                data-title="TDE Mobil">
                 <img
                     alt="tdemobilpng-8"
                     src="./img/tdemobilpng-8.png"
-                />            
+                />      
             </a>
-            <div class="m-glass">
-            </div>
+            <span class="m-glass">
+            </span>
         </div>
 
         <div class="masonry-item">
@@ -188,19 +190,23 @@
         </div>
     </div>
 
-    
     <section class="footer">
         <div class="wrapper footer-box">
             <a class="footer-box--link" href="http://milanzivanov.com">
                 <h1>milan.zivanov@gmail.com</h1>
             </a>
         </div>
-        <section class="back-to-top">
-            <a href="#sectionHeader" class="btn-to-top">
+        <!-- <section class="back-to-top"> -->
+            <!-- <a href="#sectionHeader" class="btn-to-top">
+                <i class="arrow up"></i>
+            </a> -->
+            <a href="javascript:void()" class="back-to-top" title="Back to top">
                 <i class="arrow up"></i>
             </a>
-        </section>
+            <!-- <a href="javascript:void()" id="back-to-top" title="Back to top">&uarr;</a> -->
+        <!-- </section> -->
     </section>
+
     
 
     <!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script> -->
