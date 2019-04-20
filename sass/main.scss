@@ -5,17 +5,8 @@
 body {
   background-color: #222; 
   color: #ccc;
-
   background-color: #155799;;
-  // background-image: linear-gradient(120deg,#155799,#159957);
-
   font-family: Roboto, Montserrato, Open-sans;
-}
-
-// danger... we gona fix this
-a {
-  cursor: pointer;
-  display: block;
 }
 
 .masonry-item:hover {
@@ -96,7 +87,6 @@ img.header-box--logo.sticky {
     }
 }
 
-// 
 // sticky
 
 .header {
@@ -120,47 +110,68 @@ img.header-box--logo.sticky {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+
+    margin-top: 205px;
 }
 
 .masonry-item {
-    // flex: calc(50% - 8px);
-    // margin: 0 8px 8px 0; /* Some gutter */
-
     flex: calc(50% - 16px);
     margin: 0 8px 8px 8px;
-
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     transition: 0.1s ease-in-out; 
 }
 
 .masonry-item:nth-child(even) {
-  margin-left: 0;
+    margin-left: 0;
 }
 
-.masonry-item:hover > .m-glass {
-  display: inline-block;
-  cursor: pointer;
+.masonry-item--link {
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.masonry-item--link:hover > .m-glass {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .m-glass {
-  font-size: 10em;
+    font-size: 10em;
+    display: none;
+    width: 0.4em;
+    box-sizing: content-box;
+    height: 0.4em;
+    border: 0.1em solid #ccc;
+    position: absolute;
+    border-radius: 0.35em;
+}
+
+.m-glass--plus {
   display: none;
-  width: 0.4em;
-  box-sizing: content-box;
-  height: 0.4em;
-  border: 0.1em solid #ccc;
-  position: absolute;
-  border-radius: 0.35em;
+  transition: all ease-in-out;
+}
+
+.m-glass:hover .m-glass--plus {
+  display: flex;
+  color: #ccc;
 }
 
 @media screen and (max-width: 768px) {
-  .masonry-item:hover > .m-glass {
-    display: none;
+    .masonry-item:hover > .m-glass {
+        display: none;
+    }
+
+    .m-glass {
+        display: none;
+    }
+
+    .m-glass--plus {
+      display: none;
   }
 }
 
