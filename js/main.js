@@ -3,6 +3,10 @@ $(document).ready(function () {
     // console.log('everything is working');
 });
 
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+
 
 // particlesjs
 particlesJS('particles-js', {
