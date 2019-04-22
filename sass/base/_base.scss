@@ -10,7 +10,16 @@ html, body {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family: 'Lato', 'Roboto', sans-serif;
+
+    color: #ccc;
+    background-color: #155799;;
+    font-family: Roboto, Montserrato, Open-sans;
+}
+
+.wrapper { 
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 // variables
@@ -23,7 +32,7 @@ $blue-color: #074a86;
     width: 100%;
 }
 
-@mixin float {
-    max-width: 1200px;
-    margin: 0 auto;
+@mixin transition {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }

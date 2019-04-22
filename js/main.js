@@ -1,7 +1,7 @@
-$(document).ready(function () {
-    "use strict";
-    // console.log('everything is working');
-});
+// $(document).ready(function () {
+//     "use strict";
+//     // console.log('everything is working');
+// });
 
 $(window).load(function() {
     $(".loader").fadeOut("slow");
@@ -141,7 +141,6 @@ $(window).scroll(function() {
 });
 
 // btt 
-
 if ($('.back-to-top').length) {
     var scrollTrigger = 100, // px
         backToTop = function () {
