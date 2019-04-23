@@ -25,6 +25,15 @@
     border-top-left-radius: 100px;
 }
 
+@media screen and (max-width: 768px) {
+    .header { 
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+}
+
     
 .header.sticky {
     font-size: 14px;
