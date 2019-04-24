@@ -193,30 +193,30 @@ img.header-box--logo.sticky {
   .header-text {
     display: none; } }
 
-.masonry-item:hover {
-  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3)); }
-
 .masonry {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
   margin-top: 205px; }
 
-.masonry-item {
+.masonry_item {
   flex: calc(50% - 16px);
   margin: 0 8px 8px 8px;
   transition: 0.1s ease-in-out; }
 
-.masonry-item:nth-child(even) {
+.masonry_item:hover {
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3)); }
+
+.masonry_item:nth-child(even) {
   margin-left: 0; }
 
-.masonry-item--link {
+.masonry_item--link {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer; }
 
-.masonry-item--link:hover > .m-glass {
+.masonry_item--link:hover > .m-glass {
   cursor: pointer;
   display: flex;
   justify-content: center;
