@@ -16,6 +16,7 @@
 .header {
     background-color: #111;
     border-bottom: 5px solid #155799;
+    border-top: 5px solid #155799;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -23,6 +24,7 @@
     @include transition;   
     border-bottom-right-radius: 100px;
     border-top-left-radius: 100px;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -34,7 +36,6 @@
     }
 }
 
-    
 .header.sticky {
     font-size: 14px;
     background: #111;
@@ -60,11 +61,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 10px;
+    padding: 20px 10px;
 }
 
 .header-box.sticky {
-    padding: 25px 10px;
+    padding: 15px 10px;
     @include transition;
 }
 
@@ -85,8 +86,8 @@ img.header-box--logo {
 }
 
 img.header-box--logo.sticky {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
 .header-text {
@@ -106,7 +107,7 @@ img.header-box--logo.sticky {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    margin-top: 205px;
+    margin-top: 145px;
 }
 
 .masonry_item {
@@ -160,7 +161,7 @@ img.header-box--logo.sticky {
 }
 
 @media screen and (max-width: 768px) {
-    .masonry-item:hover > .m-glass {
+    .masonry_item:hover > .m-glass {
         display: none;
     }
 
@@ -187,7 +188,7 @@ img.header-box--logo.sticky {
 }
 
 @media screen and (max-width: 768px) {
-  .masonry-item {
+  .masonry_item {
       flex: calc(100% - 8px);
       margin: 5px; /* Some gutter */
   }

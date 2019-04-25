@@ -121,6 +121,7 @@ html {
 .header {
   background-color: #111;
   border-bottom: 5px solid #155799;
+  border-top: 5px solid #155799;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -128,7 +129,8 @@ html {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   border-bottom-right-radius: 100px;
-  border-top-left-radius: 100px; }
+  border-top-left-radius: 100px;
+  overflow: hidden; }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -159,10 +161,10 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 10px; }
+  padding: 20px 10px; }
 
 .header-box.sticky {
-  padding: 25px 10px;
+  padding: 15px 10px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease; }
 
@@ -181,8 +183,8 @@ img.header-box--logo {
   transition: all 0.4s ease; }
 
 img.header-box--logo.sticky {
-  height: 50px;
-  width: 50px; }
+  height: 40px;
+  width: 40px; }
 
 .header-text {
   font-family: Roboto;
@@ -197,7 +199,7 @@ img.header-box--logo.sticky {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  margin-top: 205px; }
+  margin-top: 145px; }
 
 .masonry_item {
   flex: calc(50% - 16px);
@@ -242,7 +244,7 @@ img.header-box--logo.sticky {
   color: #ccc; }
 
 @media screen and (max-width: 768px) {
-  .masonry-item:hover > .m-glass {
+  .masonry_item:hover > .m-glass {
     display: none; }
   .m-glass {
     display: none; }
@@ -262,7 +264,7 @@ img.header-box--logo.sticky {
   transform: rotate(45deg); }
 
 @media screen and (max-width: 768px) {
-  .masonry-item {
+  .masonry_item {
     flex: calc(100% - 8px);
     margin: 5px;
     /* Some gutter */ } }

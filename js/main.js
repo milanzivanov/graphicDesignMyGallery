@@ -126,7 +126,7 @@ particlesJS('particles-js', {
 $(window).scroll(function() {
 
     // var headerHeight = $(".header").outerHeight();
-    var headerHeight = 200;
+    var headerHeight = 145;
 
     console.log(headerHeight);
     
