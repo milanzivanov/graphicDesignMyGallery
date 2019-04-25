@@ -132,11 +132,11 @@ $(window).scroll(function() {
     
     if ($(this).scrollTop() > headerHeight) {  
         $('.header, .header-box, .masonry, .header-box--logo').addClass("sticky");
-        $('.masonry').css({'margin-top': headerHeight });
+        // $('.masonry').css({'margin-top': headerHeight });
     }
     else {
         $('.header, .header-box, .masonry, .header-box--logo').removeClass("sticky");
-        $('.masonry').css({'margin-top': headerHeight });
+        // $('.masonry').css({'margin-top': headerHeight });
     }
 });
 

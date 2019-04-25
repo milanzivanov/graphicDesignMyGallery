@@ -18,6 +18,7 @@
     border-bottom: 5px solid #155799;
     border-top: 5px solid #155799;
     position: fixed;
+    position: relative;
     width: 100%;
     z-index: 10;
     top: 0;
@@ -36,15 +37,15 @@
     }
 }
 
-.header.sticky {
-    font-size: 14px;
-    background: #111;
-}
+// .header.sticky {
+//     font-size: 14px;
+//     background: #111;
+// }
 
-.header.sticky {
-    font-size: 14px;
-    background: #111;
-}
+// .header.sticky {
+//     font-size: 14px;
+//     background: #111;
+// }
 
 #particles-js {
     position: absolute;
@@ -64,10 +65,10 @@
     padding: 20px 10px;
 }
 
-.header-box.sticky {
-    padding: 15px 10px;
-    @include transition;
-}
+// .header-box.sticky {
+//     padding: 15px 10px;
+//     @include transition;
+// }
 
 @media screen and (max-width: 768px) {
     .header-box {
@@ -102,12 +103,11 @@ img.header-box--logo.sticky {
     }
 }
 
-
 .masonry { 
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    margin-top: 145px;
+    // margin-top: 145px;
 }
 
 .masonry_item {
@@ -190,7 +190,7 @@ img.header-box--logo.sticky {
 @media screen and (max-width: 768px) {
   .masonry_item {
       flex: calc(100% - 8px);
-      margin: 5px; /* Some gutter */
+      margin: 0 5px 5px 5px;
   }
 }
 
