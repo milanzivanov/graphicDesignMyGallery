@@ -21,6 +21,14 @@ html, body {
     margin-left: auto;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1432px) { 
+    .wrapper { 
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 // variables
 $color-border: #f2f2f2;
 $blue-color: #074a86;

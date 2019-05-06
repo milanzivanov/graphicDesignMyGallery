@@ -18,6 +18,12 @@ html, body {
   margin-right: auto;
   margin-left: auto; }
 
+@media only screen and (min-width: 769px) and (max-width: 1432px) {
+  .wrapper {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto; } }
+
 /**
  * RESET
  * Reference: http://meyerweb.com/eric/tools/css/reset/
@@ -118,6 +124,19 @@ html {
   background: url("../images/loader2.gif") 50% 50% no-repeat #155799;
   opacity: .9; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 30px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #111; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #222; }
+
+/* Handle on hover */
 .header {
   background-color: #111;
   border-bottom: 5px solid #155799;
@@ -307,7 +326,7 @@ section.back-to-top {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 9999;
+  z-index: 99999;
   background: #222;
   width: 50px;
   height: 50px;
