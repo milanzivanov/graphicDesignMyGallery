@@ -153,6 +153,8 @@ img.header-box--logo.sticky {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
 }
 
 .masonry_item--link:hover > .m-glass {
@@ -160,11 +162,16 @@ img.header-box--logo.sticky {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include transition;
+    transform: translateY(0%);
+    background: #0d8c40;
+
 }
 
 .m-glass {
     font-size: 10em;
-    display: none;
+    // display: none;
+    transform: translateY(-500%);
     width: 0.4em;
     box-sizing: content-box;
     height: 0.4em;
