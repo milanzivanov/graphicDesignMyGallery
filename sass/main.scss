@@ -285,9 +285,17 @@ section.back-to-top {
   }
 }
 
+
+//
+.sfi-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .back-to-top {
     position: fixed;
-    bottom: 40px;
+    bottom: 130px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 99999;
@@ -329,5 +337,31 @@ section.back-to-top {
     opacity: 1;
 }
 
+// css grid
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
 
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: #0d8c40;
+}
+
+main {
+    grid-area: main;
+    background-color: aqua;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blueviolet;
+}
 
