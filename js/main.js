@@ -123,22 +123,22 @@ particlesJS('particles-js', {
 })();
 
 // sticky
-$(window).scroll(function() {
+// $(window).scroll(function() {
 
-    // var headerHeight = $(".header").outerHeight();
-    var headerHeight = 145;
+//     // var headerHeight = $(".header").outerHeight();
+//     var headerHeight = 145;
 
-    console.log(headerHeight);
+//     console.log(headerHeight);
     
-    if ($(this).scrollTop() > headerHeight) {  
-        $('.header, .header-box, .masonry, .header-box--logo').addClass("sticky");
-        // $('.masonry').css({'margin-top': headerHeight });
-    }
-    else {
-        $('.header, .header-box, .masonry, .header-box--logo').removeClass("sticky");
-        // $('.masonry').css({'margin-top': headerHeight });
-    }
-});
+//     if ($(this).scrollTop() > headerHeight) {  
+//         $('.header, .header-box, .masonry, .header-box--logo').addClass("sticky");
+//         // $('.masonry').css({'margin-top': headerHeight });
+//     }
+//     else {
+//         $('.header, .header-box, .masonry, .header-box--logo').removeClass("sticky");
+//         // $('.masonry').css({'margin-top': headerHeight });
+//     }
+// });
 
 // btt
 jQuery(document).ready(function() {
