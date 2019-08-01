@@ -19,7 +19,7 @@ html, body {
 
 @media only screen and (min-width: 769px) and (max-width: 1432px) {
   .wrapper {
-    max-width: 960px;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto; } }
 
@@ -335,7 +335,7 @@ section.back-to-top {
   display: grid;
   grid-gap: 10px;
   grid-auto-flow: dense;
-  grid-template: "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh; }
+  grid-template: "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr" 33.33vh; }
   .container .box {
     background-color: #ccc;
     display: flex;
@@ -404,56 +404,89 @@ section.back-to-top {
   @media screen and (max-width: 768px) {
     .container .box.e {
       grid-column: 4 / 6;
-      grid-row: 2 / 4; } }
+      grid-row: 2 / 3; } }
   .container .box.f {
     grid-column: 1 / 3;
     grid-row: 4 / 6; }
+  @media screen and (max-width: 768px) {
+    .container .box.f {
+      grid-row: 4 / 5; } }
   .container .box.j {
     grid-column: 3 / 4;
     grid-row: 4 / 6; }
   @media screen and (max-width: 768px) {
     .container .box.j {
-      grid-column: 3 / 6;
-      grid-row: 4 / 5; } }
+      grid-column: 4 / 6;
+      grid-row: 3 / 4; } }
   .container .box.k {
     grid-column: 4 / 6;
     grid-row: 5 / 6; }
   @media screen and (max-width: 768px) {
     .container .box.k {
       grid-column: 3 / 6;
-      grid-row: 5 / 6; } }
+      grid-row: 4 / 6; } }
   .container .box.l {
     grid-column: 1 / 3;
     grid-row: 6 / 8; }
+  @media screen and (max-width: 768px) {
+    .container .box.l {
+      grid-row: 5 / 6; } }
   .container .box.s {
     grid-column: 3 / 6;
     grid-row: 6 / 8; }
   .container .box.x {
     grid-column: 1 / 2;
     grid-row: 8 / 9; }
+  @media screen and (max-width: 768px) {
+    .container .box.x {
+      grid-column: 1 / 3;
+      grid-row: 6 / 7; } }
   .container .box.y {
     grid-column: 2 / 3;
     grid-row: 8 / 9; }
+  @media screen and (max-width: 768px) {
+    .container .box.y {
+      grid-column: 1 / 3;
+      grid-row: 7 / 8; } }
   .container .box.w {
     grid-column: 3 / 6;
     grid-row: 8 / 10; }
   .container .box.z {
     grid-column: 1 / 3;
     grid-row: 9 / 11; }
+  @media screen and (max-width: 768px) {
+    .container .box.z {
+      grid-column: 1 / 3;
+      grid-row: 8 / 9; } }
   .container .box.m {
     grid-column: 3 / 4;
     grid-row: 10 / 11; }
+  @media screen and (max-width: 768px) {
+    .container .box.m {
+      grid-column: 1 / 3;
+      grid-row: 9 / 10; } }
   .container .box.q {
     grid-column: 4 / 6;
     grid-row: 10 / 11; }
+  @media screen and (max-width: 768px) {
+    .container .box.q {
+      grid-column: 1 / 6;
+      grid-row: 10 / 12; } }
   .container .box.n {
     grid-column: 1 / 4;
     grid-row: 11 / 13; }
+  @media screen and (max-width: 768px) {
+    .container .box.n {
+      grid-column: 1 / 4;
+      grid-row: 12 / 13; } }
   .container .box.g {
     grid-column: 4 / 6;
     grid-row: 11 / 13; }
+  @media screen and (max-width: 768px) {
+    .container .box.g {
+      grid-row: 12 / 13; } }
 
 @media screen and (max-width: 768px) {
   .container {
     grid-gap: 5px;
-    grid-template: "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh              "1fr 1fr 1fr 1fr" 33.33vh; } }
+    grid-template: "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh "1fr 1fr 1fr 1fr" 25vh              "1fr 1fr 1fr 1fr" 33.33vh; } }
